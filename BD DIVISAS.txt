@@ -100,9 +100,6 @@ CREATE TABLE "DIVISAS"."AV_DIVISAS_EXT"
 	"AV_OFICINA_MOD" VARCHAR2(6 BYTE), 
 	"AA_ORIGEN_MOD" VARCHAR2(30 BYTE)
    ) ;
---------------------------------------------------------
---  DDL for Table PS_AA_ENTI_OPRPN
---------------------------------------------------------
 
   CREATE TABLE "DIVISAS"."PS_AA_ENTI_OPRPN" 
    (	"NRO_IDENTIDAD" NUMBER(13,0), 
@@ -120,9 +117,6 @@ CREATE TABLE "DIVISAS"."AV_DIVISAS_EXT"
 	"AV_OFICINA_MOD" VARCHAR2(6 BYTE), 
 	"AA_ORIGEN_MOD" VARCHAR2(30 BYTE)
    )  ;
---------------------------------------------------------
---  DDL for Table PS_AA_PJ_OPR_INTDT
---------------------------------------------------------
 
   CREATE TABLE "DIVISAS"."PS_AA_PJ_OPR_INTDT" 
    (	"NRO_IDENTIDAD" NUMBER(20,0), 
@@ -168,9 +162,6 @@ CREATE TABLE "DIVISAS"."AV_DIVISAS_EXT"
 	"AA_ORIGEN_MOD" VARCHAR2(30 BYTE), 
 	"AA_ESTADO_AUTORIZA" VARCHAR2(30 BYTE)
    ) ;
---------------------------------------------------------
---  DDL for Table PS_AA_PJ_OPR_INTER
---------------------------------------------------------
 
   CREATE TABLE "DIVISAS"."PS_AA_PJ_OPR_INTER" 
    (	"NRO_IDENTIDAD" NUMBER(20,0), 
@@ -215,9 +206,7 @@ CREATE TABLE "DIVISAS"."AV_DIVISAS_EXT"
 	"AV_OFICINA_MOD" VARCHAR2(6 BYTE), 
 	"AA_ORIGEN_MOD" VARCHAR2(30 BYTE)
    ) ;
---------------------------------------------------------
---  DDL for Table PS_AA_PN_OPR_INTDT
---------------------------------------------------------
+
 
   CREATE TABLE "DIVISAS"."PS_AA_PN_OPR_INTDT" 
    (	"NRO_IDENTIDAD" NUMBER(13,0), 
@@ -264,9 +253,8 @@ CREATE TABLE "DIVISAS"."AV_DIVISAS_EXT"
 	"AA_ESTADO_AUTORIZA" VARCHAR2(20 BYTE), 
 	"AA_AUTORIZACION_DIV" VARCHAR2(20 BYTE)
    )  ;
---------------------------------------------------------
---  DDL for Table PS_AA_PN_OPR_INTER
---------------------------------------------------------
+
+
 
   CREATE TABLE "DIVISAS"."PS_AA_PN_OPR_INTER" 
    (	"NRO_IDENTIDAD" NUMBER(13,0), 
@@ -312,9 +300,8 @@ CREATE TABLE "DIVISAS"."AV_DIVISAS_EXT"
 	"AV_OFICINA_MOD" VARCHAR2(6 BYTE), 
 	"AA_ORIGEN_MOD" VARCHAR2(30 BYTE)
    ) ;
---------------------------------------------------------
---  DDL for Table PS_AV_DIV_MOV_PJ_H
---------------------------------------------------------
+
+
 
   CREATE TABLE "DIVISAS"."PS_AV_DIV_MOV_PJ_H" 
    (	"ACTIONDTTM" TIMESTAMP (6), 
@@ -342,16 +329,7 @@ CREATE TABLE "DIVISAS"."AV_DIVISAS_EXT"
 	"AA_ORIGEN" VARCHAR2(30 BYTE), 
 	"AV_OFICINA_MOD" VARCHAR2(6 BYTE), 
 	"AA_ORIGEN_MOD" VARCHAR2(30 BYTE)
-   ) SEGMENT CREATION IMMEDIATE 
-  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
- ROW STORE COMPRESS ADVANCED LOGGING
-  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
-  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
-  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
-  TABLESPACE "USERS"   NO INMEMORY ;
---------------------------------------------------------
---  DDL for Table PS_AV_ENTI_OPRPJ_H
---------------------------------------------------------
+   );
 
   CREATE TABLE "DIVISAS"."PS_AV_ENTI_OPRPJ_H" 
    (	"NRO_IDENTIDAD" NUMBER(20,0), 
@@ -373,16 +351,7 @@ CREATE TABLE "DIVISAS"."AV_DIVISAS_EXT"
 	"AA_ORIGEN" VARCHAR2(30 BYTE), 
 	"AV_OFICINA_MOD" VARCHAR2(6 BYTE), 
 	"AA_ORIGEN_MOD" VARCHAR2(30 BYTE)
-   ) SEGMENT CREATION IMMEDIATE 
-  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
- ROW STORE COMPRESS ADVANCED LOGGING
-  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
-  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
-  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
-  TABLESPACE "USERS"   NO INMEMORY ;
---------------------------------------------------------
---  DDL for Table PS_AV_ENTI_OPRPN_H
---------------------------------------------------------
+   );
 
   CREATE TABLE "DIVISAS"."PS_AV_ENTI_OPRPN_H" 
    (	"NRO_IDENTIDAD" NUMBER(20,0), 
@@ -404,9 +373,7 @@ CREATE TABLE "DIVISAS"."AV_DIVISAS_EXT"
 	"AV_OFICINA_MOD" VARCHAR2(6 BYTE), 
 	"AA_ORIGEN_MOD" VARCHAR2(30 BYTE)
    )  ;
---------------------------------------------------------
---  DDL for Table PS_AV_PJ_O_INTDT_H
---------------------------------------------------------
+
 
   CREATE TABLE "DIVISAS"."PS_AV_PJ_O_INTDT_H" 
    (	"NRO_IDENTIDAD" NUMBER(20,0), 
@@ -455,9 +422,7 @@ CREATE TABLE "DIVISAS"."AV_DIVISAS_EXT"
 	"AV_OFICINA_MOD" VARCHAR2(6 BYTE), 
 	"AA_ORIGEN_MOD" VARCHAR2(30 BYTE)
    )  ;
---------------------------------------------------------
---  DDL for Table PS_AV_PJ_O_INTER_H
---------------------------------------------------------
+
 
   CREATE TABLE "DIVISAS"."PS_AV_PJ_O_INTER_H" 
    (	"NRO_IDENTIDAD" NUMBER(25,0), 
@@ -506,9 +471,6 @@ CREATE TABLE "DIVISAS"."AV_DIVISAS_EXT"
 	"AV_OFICINA_MOD" VARCHAR2(6 BYTE), 
 	"AA_ORIGEN_MOD" VARCHAR2(30 BYTE)
    ) ;
---------------------------------------------------------
---  DDL for Table PS_AV_PN_O_INTDT_H
---------------------------------------------------------
 
   CREATE TABLE "DIVISAS"."PS_AV_PN_O_INTDT_H" 
    (	"NRO_IDENTIDAD" NUMBER(13,0), 
@@ -556,16 +518,8 @@ CREATE TABLE "DIVISAS"."AV_DIVISAS_EXT"
 	"AA_ORIGEN" VARCHAR2(30 BYTE), 
 	"AV_OFICINA_MOD" VARCHAR2(6 BYTE), 
 	"AA_ORIGEN_MOD" VARCHAR2(30 BYTE)
-   ) SEGMENT CREATION IMMEDIATE 
-  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 
- ROW STORE COMPRESS ADVANCED LOGGING
-  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
-  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
-  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
-  TABLESPACE "USERS"   NO INMEMORY ;
---------------------------------------------------------
---  DDL for Table PS_AV_PN_O_INTER_H
---------------------------------------------------------
+   )  ;
+
 
   CREATE TABLE "DIVISAS"."PS_AV_PN_O_INTER_H" 
    (	"NRO_IDENTIDAD" NUMBER(20,0), 
@@ -615,9 +569,7 @@ CREATE TABLE "DIVISAS"."AV_DIVISAS_EXT"
 	"AV_OFICINA_MOD" VARCHAR2(6 BYTE), 
 	"AA_ORIGEN_MOD" VARCHAR2(30 BYTE)
    )  ;
---------------------------------------------------------
---  DDL for Table PS_COUNTRY_TBL
---------------------------------------------------------
+
 
   CREATE TABLE "DIVISAS"."PS_COUNTRY_TBL" 
    (	"COUNTRY" VARCHAR2(3 BYTE), 
@@ -663,9 +615,7 @@ CREATE TABLE "DIVISAS"."AV_DIVISAS_EXT"
 	"SYNCID" NUMBER(*,0), 
 	"SYNCDTTM" DATE
    ) ;
---------------------------------------------------------
---  DDL for Table PS_CURRENCY_CD_TBL
---------------------------------------------------------
+
 
   CREATE TABLE "DIVISAS"."PS_CURRENCY_CD_TBL" 
    (	"CURRENCY_CD" VARCHAR2(3 BYTE), 
@@ -683,15 +633,9 @@ CREATE TABLE "DIVISAS"."AV_DIVISAS_EXT"
 
 
 
- CREATE UNIQUE INDEX "DIVISAS"."PS_AA_PN_OPR_INTER" ON "DIVISAS"."PS_AA_PN_OPR_INTER" ("NRO_IDENTIDAD", "TIPO_IDENTIDAD") 
-  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS 
-  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
-  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1
-  BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
-  TABLESPACE "USERS" ;
---------------------------------------------------------
---  DDL for Trigger AV_DIV_MOV_PJ_D_TGR
---------------------------------------------------------
+ CREATE UNIQUE INDEX "DIVISAS"."PS_AA_PN_OPR_INTER" ON "DIVISAS"."PS_AA_PN_OPR_INTER" ("NRO_IDENTIDAD", "TIPO_IDENTIDAD");
+
+
 
   CREATE OR REPLACE EDITIONABLE TRIGGER "DIVISAS"."AV_DIV_MOV_PJ_D_TGR" 
 /* --------------------------------------------------------------------------------------
@@ -722,9 +666,10 @@ end AV_DIV_MOV_PJ_D_TGR;
 
 /
 ALTER TRIGGER "DIVISAS"."AV_DIV_MOV_PJ_D_TGR" ENABLE;
---------------------------------------------------------
---  DDL for Trigger AV_DIV_MOV_PJ_I_TGR
---------------------------------------------------------
+
+
+
+
 
   CREATE OR REPLACE EDITIONABLE TRIGGER "DIVISAS"."AV_DIV_MOV_PJ_I_TGR" 
 /* --------------------------------------------------------------------------------------
@@ -755,9 +700,7 @@ end AV_DIV_MOV_PJ_I_TGR;
 
 /
 ALTER TRIGGER "DIVISAS"."AV_DIV_MOV_PJ_I_TGR" ENABLE;
---------------------------------------------------------
---  DDL for Trigger AV_DIV_MOV_PJ_U_TGR
---------------------------------------------------------
+
 
   CREATE OR REPLACE EDITIONABLE TRIGGER "DIVISAS"."AV_DIV_MOV_PJ_U_TGR" 
 /* --------------------------------------------------------------------------------------
