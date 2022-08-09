@@ -638,16 +638,10 @@ CREATE TABLE "DIVISAS"."AV_DIVISAS_EXT"
 
 
   CREATE OR REPLACE EDITIONABLE TRIGGER "DIVISAS"."AV_DIV_MOV_PJ_D_TGR" 
-/* --------------------------------------------------------------------------------------
-   AUTOR     FECHA        REF COMENTARIO
-   GMARTRUS  23-OCT-2009  001 Trigger que peromite guardar el historial de la tabla
-   CIMA                       PS_AA_DIV_MOV_PJ.
-   -------------------------------------------------------------------------------------- */
-  before delete on PS_AA_DIV_MOV_PJ
+  before delete on DIVISAS.PS_AA_DIV_MOV_PJ
   for each row
-/* Inicio 001 */
+
 Begin
-  /* Se guarda el histoico de la tabla */
   INSERT into PS_AV_DIV_MOV_PJ_H (
          ACTIONDTTM, APPLIED_OPRID, AV_TIP_ACCION, APPLIED_OPRID2,
          NRO_IDENTIDAD,TIPO_IDENTIDAD, SETID, SEQ_NBR, AA_FECHA_TX, AA_COD_AUTORIZ,
@@ -661,7 +655,7 @@ Begin
          :OLD.ROW_LASTMANT_DTTM, :OLD.ROW_LASTMANT_OPRID, :OLD.SYNCID, :OLD.SYNCDTTM,
          :OLD.AV_OFICINA_ADI, :OLD.AA_ORIGEN, :OLD.AV_OFICINA_MOD, :OLD.AA_ORIGEN_MOD);
   EXCEPTION WHEN Dup_Val_On_Index THEN NULL;
-/* Fin 001 */
+
 end AV_DIV_MOV_PJ_D_TGR;
 
 /
